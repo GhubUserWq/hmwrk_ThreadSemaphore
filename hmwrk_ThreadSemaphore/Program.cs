@@ -39,22 +39,4 @@
             Console.ReadLine();
         }
     }
-
-    class ThreadsInClass
-    {
-        public void Objects(short thread)
-        {
-            Console.WriteLine("Incoming: " + thread);
-            Thread.Sleep(TimeSpan.FromSeconds(3));
-        }
-    }
-
-    class Printer
-    {
-        public void Users(short user)
-        {
-            Console.WriteLine($"User " + user + " printing");
-            Thread.Sleep(TimeSpan.FromSeconds(3));
-        }
-    }
 }
