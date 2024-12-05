@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Semaphore semaphoreObject = new Semaphore(initialCount: 3, maximumCount: 3, name: "PrinterApp");
+            Semaphore semaphoreObject = new Semaphore(initialCount: 3, maximumCount: 3, name: "PrinterApp"); //
             Printer printerObject = new Printer();
 
             for (int i = 0; i < 20; ++i)
