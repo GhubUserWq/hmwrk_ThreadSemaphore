@@ -7,7 +7,7 @@
             Semaphore semaphoreObject = new Semaphore(initialCount: 3, maximumCount: 3, name: "PrinterApp"); //
             Printer printerObject = new Printer();
 
-            for (int i = 0; i < 20; ++i)
+            for (int i = 0; i < 11; ++i)
             {
                 int j = i;
                 Task.Factory.StartNew(() =>
@@ -27,7 +27,7 @@
         {
             Console.WriteLine("Printing document: " + documentToPrint);
             //code to print document
-            Thread.Sleep(TimeSpan.FromSeconds(5));
+            Thread.Sleep(TimeSpan.FromSeconds(3));
         }
     }
 }
